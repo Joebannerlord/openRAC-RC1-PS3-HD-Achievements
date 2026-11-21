@@ -1,0 +1,50 @@
+{
+  "format": 2,
+  "id": "rac1-hd-achievements",
+  "name": "RAC1 HD Achievements",
+  "author": "Joebannerlord",
+  "version": "0.5.2",
+  "description": "Track the 35 RAC1 HD trophies locally and see your collection in the OpenRAC launcher.",
+  "games": {
+    "rac1": [
+      "pal",
+      "ntsc"
+    ]
+  },
+  "api": "1.11",
+  "plugin": {
+    "windows-x86_64": "lib/windows-x86_64/rac1_hd_achievements.dll"
+  },
+  "hooks": [
+    "rac1.save.restore",
+    "rac1.save.restore_data",
+    "rac1.save.new_game",
+    "rac1.save.new_game_plus",
+    "rac1.moby.collect_bolt",
+    "rac1.save.prepare",
+    "rac1.save.serialize",
+    "rac1.save.request_autosave"
+  ],
+  "license": "GPL-3.0-or-later",
+  "assets": "ui",
+  "settings": [
+    {
+      "key": "preview_toast",
+      "type": "keybind",
+      "name": "Preview trophy popup",
+      "description": "Show a sample trophy popup during gameplay without changing progress.",
+      "default": "Insert",
+      "binds": 1
+    },
+    {
+      "key": "toast_sound",
+      "type": "bool",
+      "name": "Trophy popup sound",
+      "description": "Play a short chime when a trophy popup appears.",
+      "default": true
+    }
+  ],
+  "tool": {
+    "page": "ui/index.html"
+  }
+}
