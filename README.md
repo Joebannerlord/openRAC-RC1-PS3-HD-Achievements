@@ -20,10 +20,11 @@ Load a save, then open or refresh the collection page to see your progress. Pres
 
 ## Build on Windows
 
-Use an x64 Visual Studio developer prompt with MSVC, CMake 3.20 or newer, and Python 3. Unpack the [OpenRAC Mod SDK](https://github.com/OpenRAC/OpenRAC/releases/tag/sdk-v1.14.2) identified in [`sdk.lock`](sdk.lock).
+Use an x64 Visual Studio developer prompt with MSVC, CMake 3.20 or newer, and Python 3. The SDK fetcher downloads and verifies the version in [`sdk.lock`](sdk.lock).
 
 ```powershell
-cmake -S . -B build "-DOPENRAC_SDK=C:/path/to/openrac-mod-sdk-1.14.2"
+python tools/fetch_sdk.py
+cmake -S . -B build
 cmake --build build --config Release --target release_zip
 ```
 
