@@ -3,7 +3,7 @@
   "id": "rac1-hd-achievements",
   "name": "RAC1 HD Achievements",
   "author": "Joebannerlord",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Track the 35 RAC1 HD trophies locally and see your collection in the OpenRAC launcher.",
   "games": {
     "rac1": [
@@ -13,7 +13,8 @@
   },
   "api": "1.11",
   "plugin": {
-    "windows-x86_64": "lib/windows-x86_64/rac1_hd_achievements.dll"
+    "windows-x86_64": "lib/windows-x86_64/rac1_hd_achievements.dll",
+    "linux-x86_64": "lib/linux-x86_64/rac1_hd_achievements.so"
   },
   "hooks": [
     "rac1.save.restore",

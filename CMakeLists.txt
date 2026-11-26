@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
-project(rac1_hd_achievements VERSION 0.5.2 LANGUAGES CXX)
+project(rac1_hd_achievements VERSION 0.5.3 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 add_subdirectory(src/core)
